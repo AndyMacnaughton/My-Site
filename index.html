@@ -14,23 +14,69 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-    
-        <div id="site">
+        <script type="text/x-handlebars">  
+        <div class="banner-wrapper">
+            <div class="banner-image">
+            </div>
+        </div>
 
+            <header>
+                <div class="header-wrapper">
+                      <nav>
+                        <ul>
+                            <li>
+                                {{#link-to 'about'}}About{{/link-to}}
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            {{outlet}}
+        </script>
+        
+        <script type="text/x-handlebars" data-template-name="index">            
             <div class="wrapper">
                 <div class="content">
-                    <h1>Nope.</h4>
+                    
+                    <h2>I&#39m Andrew.</h2>
+                    <p>Technology Consultant, Data Analyist and Developer</p>
                 </div>
             </div>
+        </script>
 
-        </div>
+         <script type="text/x-handlebars" data-template-name="about">            
+            <div class="wrapper">
+                <div class="content">
+                    <div class="site-text">
+                        <h3>My Background</h3>
+                        <p> 
+                            As with many people who have just finished school, I had no idea what I wanted to pursue as a career. I got offered a place at University to study Biological Sciences and I took it. After two years, I decided it wasn&#39t for me. I then took a job for the NHS as a database administrator where I first started learning how to code.
+                        </p>    
+
+                        <h3>My Job</h3>
+                        <p> 
+                            I now have a full time job working for <a href="http://www.theiggroup.com">The IG Group</a>. I work on various projects from fully flegded desktop applications to the development of forecast models and reporting tools. Additionally, I fulfill a role as a technology consultant advising our clients of best practice and strategy with particular regard to Contact Centres.
+                        </p>
+                        <h3>My Spare Time</h3>
+                        <p>
+                            I love learning new things, solving problems and creating useful things. As a result, I spend much of my free time learning how to code various things. At the moment my focus is on learning Ruby on Rails.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
-        <script src="js/main.js"></script>
+        <script src="js/libs/jquery-1.11.0.min.js"></script>
+        <script src="js/libs/handlebars-1.1.2.js"></script>
+        <script src="js/libs/ember-1.5.1.js"></script>
+        <script src="js/app.js"></script>
+
     </body>
 </html>
