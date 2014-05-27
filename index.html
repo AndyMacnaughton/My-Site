@@ -24,18 +24,26 @@
         </div>
 
             <header>
-                <div class="header-wrapper">
-                      <nav>
-                        <ul>
-                            <li>
-                                {{#link-to 'about'}}About{{/link-to}}
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                {{render 'navbar'}}
             </header>
 
             {{outlet}}
+        </script>
+
+        <script type="text/x-handlebars" data-template-name="navbar">
+            <div class="header-wrapper">
+                  <nav>
+                    <ul>
+                        <li>
+                            {{#if isIndex}}
+                                {{#link-to 'about'}}About{{/link-to}}
+                            {{else}}
+                                <a href="#">Home</a>
+                            {{/if}}
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </script>
         
         <script type="text/x-handlebars" data-template-name="index">            
@@ -43,7 +51,7 @@
                 <div class="content">
                     
                     <h2>I&#39m Andrew.</h2>
-                    <p>Technology Consultant, Data Analyist and Developer</p>
+                    <p>Technology Consultant - Data Analyist - Developer</p>
                 </div>
             </div>
         </script>
@@ -54,16 +62,16 @@
                     <div class="site-text">
                         <h3>My Background</h3>
                         <p> 
-                            As with many people who have just finished school, I had no idea what I wanted to pursue as a career. I got offered a place at University to study Biological Sciences and I took it. After two years, I decided it wasn&#39t for me. I then took a job for the NHS as a database administrator where I first started learning how to code.
+                            As with many people who have just finished school, I had no idea what I wanted to pursue as a career. I got offered a place at University to study Biological Sciences and I took it. After two years, I decided it wasn&#39t for me. I moved on and took a job for the National Health Service as a database administrator where I first started learning how to code.
                         </p>    
 
                         <h3>My Job</h3>
                         <p> 
-                            I now have a full time job working for <a href="http://www.theiggroup.com">The IG Group</a>. I work on various projects from fully flegded desktop applications to the development of forecast models and reporting tools. Additionally, I fulfill a role as a technology consultant advising our clients of best practice and strategy with particular regard to Contact Centres.
+                            I now have a full time job working for <a href="http://www.theiggroup.com">The IG Group</a>. I work on various projects from fully fledged desktop applications to the development of forecast models and reporting tools. Additionally, I fulfill a role as a technology consultant advising our clients of best practice and strategy with a particular regard to Contact Centres.
                         </p>
                         <h3>My Spare Time</h3>
                         <p>
-                            I love learning new things, solving problems and creating useful things. As a result, I spend much of my free time learning how to code various things. At the moment my focus is on learning Ruby on Rails.
+                            I love learning new things, solving problems and creating useful things. As a result, I spend much of my free time learning how to code various things. At the moment my focus is on learning Ruby on Rails which I am hoping will form a starting point to creating my first web application.
                         </p>
                     </div>
                 </div>
