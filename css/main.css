@@ -1,5 +1,5 @@
 /* Fonts */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(http://fonts.googleapis.com/css?family=Lato:400);
 
 html,
 button,
@@ -70,7 +70,8 @@ header {
 .header-wrapper {
     display: table;
     width: 100%;
-    max-width: 920px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 a {
@@ -86,6 +87,7 @@ nav {
     display: table-cell;
     vertical-align: middle;
     text-align: right;
+    padding-right: 10px;
 }
 
 nav ul li {
@@ -93,7 +95,6 @@ nav ul li {
 }
 
 nav ul li a {
-    
     color: #000000;
 }
 
@@ -125,6 +126,7 @@ nav ul li a {
     height: 100%;
     opacity: 0.2;
     z-index: -1;
+    background-color: #FDF8F5;
 }
 
 .banner-image {
@@ -138,6 +140,10 @@ nav ul li a {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+.site-text {
+    padding-top: 50px;
 }
 
 .site-text h3, .site-text p {

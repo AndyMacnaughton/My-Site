@@ -1,7 +1,6 @@
 App = Ember.Application.create({
-	LOG_TRANSITIONS: true
+	LOG_TRANSITIONS: false
 });
-
 
 App.Router.map(function() {
  	this.route('about');
@@ -22,4 +21,10 @@ App.AboutRoute = Ember.Route.extend({
 
 App.NavbarController = Ember.Controller.extend({
 	isIndex: true
+});
+
+// JQuery Functions
+
+$(window).load(function() {
+	$('.banner-wrapper').append('<div class="banner-image"></div>').hide().fadeIn(400);
 });
