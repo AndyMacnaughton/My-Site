@@ -59,6 +59,8 @@ html, body {
     height: 100%;
 }
 
+/* Header Styles */
+
 header {
     padding-top: 40px;
     position: absolute;
@@ -72,15 +74,6 @@ header {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-}
-
-a:hover, a:active {
-    color: #1ca605;
 }
 
 nav {
@@ -98,6 +91,16 @@ nav ul li a {
     color: #000000;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover, a:active {
+    color: #1ca605;
+}
+
+/* Page Styles */
 
 .ember-view {
     top: 0;
@@ -144,14 +147,19 @@ nav ul li a {
 
 .site-text {
     padding-top: 50px;
-}
-
-.site-text h3, .site-text p {
     text-align: left;
 }
 
 .site-text p {
     padding-bottom: 20px;
+}
+
+.home {
+    line-height: 2em;
+}
+
+.social-media {
+    margin: 1em;
 }
 
 
