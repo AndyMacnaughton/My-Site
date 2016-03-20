@@ -11,7 +11,7 @@ textarea {
 
 html {
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.8;
     font-family: 'Lato', sans-serif;
 }
 
@@ -72,7 +72,7 @@ header {
 .header-wrapper {
     display: table;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -91,14 +91,23 @@ nav ul li a {
     color: #000000;
 }
 
+.social-media a {
+  color: #000000;
+}
+.social-media a:hover, .social-media a:active {
+  color: #1ca605;
+}
+
+
 a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #1ca605;
 }
 
 a:hover, a:active {
-    color: #1ca605;
+  color: #0f5905;
 }
+
 
 /* Page Styles */
 
